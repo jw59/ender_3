@@ -345,12 +345,12 @@
 //#define CUSTOM_PROBE
 
 // Use Ender Bootscreeen instead of TH3D
-//#define ENDER_BOOT
+#define ENDER_BOOT
 
 //===========================================================================
 // Creality Ender 3 Options - Select 'Sanguino 1284p' from Tools > Board
 //===========================================================================
-//#define ENDER3
+#define ENDER3
 
 // If you are using our EZOut V1/V2 (connected to LCD header) filament sensor kit please follow the install guide
 // and then uncomment the #define EZOUT_ENABLE line below.
@@ -803,7 +803,7 @@
 #define MKS_X_DRIVER TMC2208_STANDALONE
 #define MKS_Y_DRIVER TMC2208_STANDALONE
 #define MKS_Z_DRIVER A4988
-#define MKS_E0_DRIVER A4988
+#define MKS_E0_DRIVER TMC2208_STANDALONE
 #define MKS_E1_DRIVER A4988
 
 // Thermistor Settings (uses standard Marlin Thermistor numbers)
@@ -995,7 +995,7 @@
 //#define FAN_FIX
 
 // Use your own printer name
-//#define USER_PRINTER_NAME "CHANGE ME" 
+#define USER_PRINTER_NAME "CapeFear PPE" 
 
 // If your printer is homing to the endstops hard uncomment this to change the homing speed/divisor to make it less aggressive.
 //#define SLOWER_HOMING
@@ -1052,7 +1052,7 @@
 // Mesh Bed Leveling Documentation: http://marlinfw.org/docs/gcode/G029-mbl.html If used with a 1284P board the bootscreen will be disabled to save space.
 // NOTE: This is not supported on the Wanhao i3 Plus due to the LCD limitations.
 // NOTE: If you want to automate the leveling process our EZABL kits do this for you. Check them out here: http://EZABL.TH3DStudio.com
-//#define MANUAL_MESH_LEVELING
+#define MANUAL_MESH_LEVELING
 
 // POWER LOSS RECOVERY -----------------------------
 // Continue after Power-Loss feature will store the current state to the SD Card at the start of each layer
