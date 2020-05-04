@@ -818,7 +818,7 @@
 // If you are using a pre-supported mount that is available already then uncomment it above in that printer section.
 // For example if you are using CR-10 with the OEM mount then scroll up and uncomment the #define CR10_OEM line like you would normally.
 // If you are using a probe mount that is not supported then use the CUSTOM_PROBE option and enter in your probe offsets below.
-//#define CUSTOM_PROBE
+#define CUSTOM_PROBE
 
 // If you are using a single hotend with the 2 into 1 adapter OR mixing nozzle uncomment the below line
 //#define DUAL_EXTRUDER_SINGLE_HOTEND
@@ -907,8 +907,8 @@
   *      O-- FRONT --+
   *    (0,0)
   */
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  +right  [of the nozzle]
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER 00 //change this from your mount // X offset: -left  +right  [of the nozzle]
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER 00  //change this from your mount // Y offset: -front +behind [the nozzle]
 #endif
 
 //===========================================================================
@@ -1009,7 +1009,7 @@
 //#define TM3D_BOOT
 
 // Disable Bootscreen completely
-//#define DISABLE_BOOT
+#define DISABLE_BOOT
 
 //===========================================================================
 //*************************** COMMUNITY FEATURES ****************************
@@ -1036,14 +1036,14 @@
 // and then enter your probe offsets in the CUSTOM_PROBE section above. The Pin 27 boards on other ecommerce sites are clones of our original EZOut.
 // If you want to support the people that originally came up with the board you can get our EZOut breakout board here: http://EZOut.TH3DStudio.com
 // Sales from our shop allow us to allocate time for community firmware development at no charge to you. <3
-//#define BLTOUCH
+#define BLTOUCH
 
 // Here is where you set your servo pin. 
 // EZOut Servo Pin Numbers: 
 // Anet(with 2004LCD)/Ender3/5/CR-10 - 27
 // Anet(with 12864LCD)/Ender 2 - 29
 // For 2560 boards look for the pin you connected the servo wire to and enter below (typically 11).
-//#define SERVO0_PIN 27
+#define SERVO0_PIN 27
 
 // The BL Touch is NOT supported on the Wanhao i3 Plus, use the ADVi3++ Firmware instead if you want to use a BL Touch.
 
@@ -1052,7 +1052,7 @@
 // Mesh Bed Leveling Documentation: http://marlinfw.org/docs/gcode/G029-mbl.html If used with a 1284P board the bootscreen will be disabled to save space.
 // NOTE: This is not supported on the Wanhao i3 Plus due to the LCD limitations.
 // NOTE: If you want to automate the leveling process our EZABL kits do this for you. Check them out here: http://EZABL.TH3DStudio.com
-#define MANUAL_MESH_LEVELING
+//    #define MANUAL_MESH_LEVELING
 
 // POWER LOSS RECOVERY -----------------------------
 // Continue after Power-Loss feature will store the current state to the SD Card at the start of each layer
