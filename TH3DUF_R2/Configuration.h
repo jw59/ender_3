@@ -803,7 +803,7 @@
 #define MKS_X_DRIVER TMC2208_STANDALONE
 #define MKS_Y_DRIVER TMC2208_STANDALONE
 #define MKS_Z_DRIVER A4988
-#define MKS_E0_DRIVER TMC2208_STANDALONE
+#define MKS_E0_DRIVER A4988
 #define MKS_E1_DRIVER A4988
 
 // Thermistor Settings (uses standard Marlin Thermistor numbers)
@@ -1001,7 +1001,7 @@
 //#define SLOWER_HOMING
 
 // Using a Creality Silent Board? Enable the below option to set the correct driver setting for those boards
-//#define TMC_CREALITY_BOARD
+#define TMC_CREALITY_BOARD
 
 // BOOT SCREEN OPTIONS -----------------------------
 
